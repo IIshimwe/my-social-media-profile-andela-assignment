@@ -1,0 +1,140 @@
+* {
+  font-family: "Kumbh Sans";
+  font-weight: 400, 700;
+}
+body {
+  margin: auto;
+  margin-top: 80px;
+  background: hsl(185, 75%, 39%);
+  height: 80vh;
+  position: relative;
+  display: flex;
+  width: auto;
+}
+body::before {
+  content: "";
+  background: url("images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: 30px;
+  height: 600px;
+  width: 80%;
+  border-radius: 50%;
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -20rem;
+  right: 43rem;
+  z-index: -1;
+}
+body::after {
+  content: "";
+  background: url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 910px;
+  height: 470px;
+  width: 35%;
+  position: absolute;
+  top: 7.5rem;
+  left: 46rem;
+  z-index: -1;
+}
+.container {
+  margin: auto;
+  background-color: white;
+  width: 350px;
+  border-radius: 15px;
+  height: 350px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 13px 20px 0 rgba(0, 0, 0, 0.13);
+}
+
+.card-header {
+  background: url("images/bg-pattern-card.svg");
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0px 0px;
+  position: relative;
+}
+
+img {
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  left: 116px;
+  top: 65px;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 78px;
+  line-height: 5px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2px;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.town {
+  font-size: 17px;
+}
+
+p {
+  font-size: 13px;
+}
+
+p,
+.age {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-family: "Kumbh Sans";
+    font-weight: 400, 700;
+  }
+  body::before {
+    content: "";
+    background: url("images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    background-position: 80px;
+    background-size: 900px;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    right: 15rem;
+    top: -2rem;
+    border-radius: 50%;
+    transform: rotate(60deg);
+  }
+  body::after {
+    content: "";
+    background: url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    height: 190px;
+    width: 40%;
+    position: absolute;
+    left: 8rem;
+  }
+  .container {
+    width: 300px;
+    height: 380px;
+  }
+  .card-header {
+    height: 150px;
+  }
+  img {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+}
