@@ -1,1 +1,1 @@
-# my-social-media-profile-andela-assignment
+# profile-card-challenge-assignment
